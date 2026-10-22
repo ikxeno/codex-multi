@@ -1,0 +1,20 @@
+[package]
+name = "codex-multi"
+edition = "2024"
+rust-version = "1.94"
+authors = ["Ivan Khanas"]
+description = "A Rust CLI for managing and switching between multiple Codex accounts."
+license = "Apache-2.0"
+readme = "README.md"
+keywords = ["cli", "codex", "terminal"]
+categories = ["command-line-utilities"]
+publish = false
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[profile.release]
+strip = true
